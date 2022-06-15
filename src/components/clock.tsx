@@ -10,6 +10,9 @@ export const Clock = () => {
     })
     return ( 
     <div>
+       <h1 className="text-3xl font-bold underline">
+      Hello world!
+    </h1>
         <h3 style = { {fontFamily: 'Fira Code'  }}>
           Date: : { new Date().toLocaleDateString()} <br/>
           Time : { getClockTime(new Date(clock_display)) 
