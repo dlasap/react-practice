@@ -12,6 +12,7 @@ import { Formcard } from './components/form-card';
 import { LoginPage } from './components/login';
 import { Logout } from './components/logout';
 import image from "./bkg-imgs/image.jpeg"; 
+import { Footer } from './components/footer';
 const divStyle = {
   container: {
       backgroundImage: `url(${"https://images.pexels.com/photos/2246476/pexels-photo-2246476.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"})`,
@@ -63,6 +64,7 @@ function App() {
            </body>
          
          </div>
+         <Footer/>
     </div>
   );
 }
