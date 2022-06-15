@@ -11,7 +11,7 @@ import {
 import { Formcard } from './components/form-card';
 import { LoginPage } from './components/login';
 import { Logout } from './components/logout';
-import image from "./bkg-imgs/image.jpeg"; 
+import image from "./bkg-imgs/image-2.jpg"; 
 const divStyle = {
   container: {
       backgroundImage: `url(${"https://images.pexels.com/photos/2246476/pexels-photo-2246476.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"})`,
