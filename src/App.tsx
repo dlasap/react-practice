@@ -40,12 +40,13 @@ function App() {
         <Clock/>
            <Router>
          <div className="main_navigation">
-          <Link to="/">Home</Link> 
-          <Link to="/register">No Account? Register</Link>
-          <Link to="/login">Log In Page</Link>
+          <Link to="/">Home </Link> 
+          <Link to="/register">No Account? Register </Link>
+          <Link to="/login">Log In Page </Link>
           <Link to="/profile"> Profile </Link>
         </div>
-             <Routes>
+        <div className="main_body">
+              <Routes>
                   <Route path="/"  element={
                   <h1 style={ {fontFamily: 'Fira Code'}}> 
                   Greetings Fellow Mortals!
@@ -55,6 +56,8 @@ function App() {
                    <Route path="/profile" element={<Formcard />} />
                    <Route path="/login" element={<LoginPage />} />
               </Routes>
+        </div>
+           
         </Router>
          
          <div className="main_footer">

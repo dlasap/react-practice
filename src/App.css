@@ -31,13 +31,20 @@
 }
 
 .main_container div{
-  border: 10px solid #0000;
+  border: 10px solid rgba(224, 8, 8, 0);
   padding: 10px;
+}
+
+.main_body{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  align-items: center;
 }
 
 .main_header {
   grid-column-start: 1;
   grid-column-end: 2;
+  align-items: center;
 }
 
 .main_navigation{
