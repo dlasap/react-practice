@@ -9,14 +9,9 @@ export const Clock = () => {
          setTimeout(( )=>{setClockDisplay(new Date())}, 1000);
     })
     return ( 
-    <div>
-       <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-        <h3 style = { {fontFamily: 'Fira Code'  }}>
+    <div className="main_header">
           Date: : { new Date().toLocaleDateString()} <br/>
-          Time : { getClockTime(new Date(clock_display)) 
-      } </h3> 
+          Time : { getClockTime(new Date(clock_display))  } 
       </div>
     )
   }

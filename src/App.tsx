@@ -36,20 +36,15 @@ backgroundRepeat: 'no-repeat',
 function App() {
   
   return (
-    <div className="App" style={style}>
-      {/* <img src="https://images.pexels.com/photos/2246476/pexels-photo-2246476.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"/> */}
-      <header className="App-header" >
+    <div className="main_container" style={style}>
         <Clock/>
-        </header>
-         <div>
-           <body className="App-header" >
            <Router>
-         <h6 className='Links'>
-          <Link to="/">Home</Link> <br/>
-          <Link to="/register">No Account? Register</Link><br/>
-          <Link to="/login">Log In Page</Link><br/>
+         <div className="main_navigation">
+          <Link to="/">Home</Link> 
+          <Link to="/register">No Account? Register</Link>
+          <Link to="/login">Log In Page</Link>
           <Link to="/profile"> Profile </Link>
-        </h6>
+        </div>
              <Routes>
                   <Route path="/"  element={
                   <h1 style={ {fontFamily: 'Fira Code'}}> 
@@ -61,10 +56,10 @@ function App() {
                    <Route path="/login" element={<LoginPage />} />
               </Routes>
         </Router>
-           </body>
          
-         </div>
+         <div className="main_footer">
          <Footer/>
+           </div>
     </div>
   );
 }

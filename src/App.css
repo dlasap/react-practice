@@ -12,11 +12,44 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-.Links{
-  background-color: #339645;
-  flex-direction: column;
-  display: inline-block;
-  color: rgb(120, 203, 177);
+
+.main_container{
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16px;
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 50px 1fr 1fr 100px;
+
+  gap: 10px;
+  padding: 10px;
+  box-sizing:border-box;
+}
+
+.main_container div{
+  border: 10px solid #0000;
+  padding: 10px;
+}
+
+.main_header {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.main_navigation{
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+.main_footer {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 4;
+  grid-row-end: 5;
 }
 .App-header {
   min-height: 5vh;
