@@ -1,0 +1,5 @@
+https://www.oreilly.com/library/view/designing-web-navigation/9780596528102/ch04.html\
+https://codersociety.com/blog/articles/react-hooks
+https://codepen.io/florantara/pen/dROvdb
+https://reactjs.org/docs/handling-events.html
+https://css-tricks.com/almanac/properties/g/grid-template/
