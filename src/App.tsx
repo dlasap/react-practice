@@ -25,7 +25,7 @@ const divStyle = {
 };
 
 const style =  {
-backgroundImage: `url(${image})`,
+// backgroundImage: `url(${image})`,
 backgroundPosition: 'center',
 width: '100vw',
 height: '100vh',
