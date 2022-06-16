@@ -10,8 +10,8 @@ export const Clock = () => {
     })
     return ( 
     <div className="main_header">
-          Date: : { new Date().toLocaleDateString()} <br/>
-          Time : { getClockTime(new Date(clock_display))  } 
+          { new Date().toLocaleDateString()} <br/>
+          { getClockTime(new Date(clock_display))  } 
       </div>
     )
   }

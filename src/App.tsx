@@ -48,7 +48,7 @@ function App() {
         <div className="main_body">
               <Routes>
                   <Route path="/"  element={
-                  <h1 style={ {fontFamily: 'Fira Code'}}> 
+                  <h1 style={ {fontSize: 40, fontFamily: 'Fira Code'}}> 
                   Greetings Fellow Mortals!
                    </h1>}/>
                    <Route path="/test"  element={<MainApp />}  />

@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom"
 import { SyntheticEvent, useEffect, useState } from "react"
 import axios from"axios"
 import { useCookies } from 'react-cookie';
+import Button from '@mui/material/Button';
 
 const { ENDPOINt = "http://localhost:6001" } = process.env;
 
@@ -71,10 +72,7 @@ useEffect(()=>{
 
 return (
  <div>
-     <h1>
-     WELCOME TO OUR LOGIN PAGE!
-    </h1>
-      <div>
+      <div className="text-black text-2xl">
             <label>
                 Username: 
                 <input id="username" name="username" onChange={handleText}/>
@@ -85,11 +83,7 @@ return (
                 <input id="password" name="password" onChange={handleText}/>
             </label>
       </div>
-      <span>
-          <div>
-          <button onClick={()=>verifyLogin(loginDetails)}> Log In</button>
-          </div>
-      </span>
+          <Button variant="contained" onClick={()=>verifyLogin(loginDetails)}>Log In</Button>
       <ToastContainer/>
  </div>
 )

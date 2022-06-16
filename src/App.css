@@ -19,11 +19,12 @@
   height: 100vh;
 
   font-family: 'Courier New', Courier, monospace;
-  font-size: 16px;
+  font-size: 20px;
+  color:rgb(239, 235, 235);
   display: grid;
 
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 50px 1fr 1fr 100px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 100px 1fr 1fr 100px;
 
   gap: 10px;
   padding: 10px;
@@ -31,30 +32,42 @@
 }
 
 .main_container div{
-  border: 10px solid rgba(224, 8, 8, 0);
-  padding: 10px;
+  border: 10px solid rgba(217, 210, 210, 0);
+  padding: 5px;
 }
 
 .main_body{
   grid-column-start: 2;
-  grid-column-end: 3;
-  align-items: center;
+  grid-column-end: 5;
+  place-items: center;
+  font-size: 25px;
+  width: 655px;
+  margin: auto;
+
 }
 
 .main_header {
   grid-column-start: 1;
   grid-column-end: 2;
   align-items: center;
+  color:rgb(95, 236, 236);
+  font-weight: bold;
+  font-size: 25px;
 }
 
 .main_navigation{
   grid-column-start: 2;
-  grid-column-end: 4;
+  grid-column-end: 5;
+  color:rgb(25, 30, 24);
+  font-weight: bold;
+  font-size: 32px;
+  align-items: center;
+  margin-top: 15px;
 }
 
 .main_footer {
   grid-column-start: 1;
-  grid-column-end: 4;
+  grid-column-end: 5;
   grid-row-start: 4;
   grid-row-end: 5;
 }
