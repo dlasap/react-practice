@@ -14,10 +14,12 @@ import { Logout } from './components/logout';
 import image from "./bkg-imgs/image-2.jpg"; 
 import { Footer } from './components/footer';
 import { GalleryPage } from './components/gallery';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 const style =  {
-backgroundImage: `url(${image})`,
+// backgroundImage: `url(${image})`,
 backgroundPosition: 'center',
+backgroundColor: "orange",
 width: '100vw',
 height: '100vh',
 backgroundSize: 'cover',

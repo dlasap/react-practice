@@ -4,7 +4,10 @@ import { useNavigate } from "react-router-dom"
 import { SyntheticEvent, useEffect, useState } from "react"
 import axios from"axios"
 import { useCookies } from 'react-cookie';
-import { Button, TextField, Container, Box} from '@mui/material';
+import { TextField} from '@mui/material';
+
+import Button from "react-bootstrap/Button"
+import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 const { ENDPOINt = "http://localhost:6001" } = process.env;
 
