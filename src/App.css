@@ -18,7 +18,7 @@
   width: 100vw;
   height: 100vh;
 
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Verdana', Courier, monospace;
   font-size: 20px;
   color:rgb(239, 235, 235);
   display: grid;
@@ -26,7 +26,7 @@
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 100px 1fr 1fr 100px;
 
-  gap: 10px;
+  gap: 5px;
   padding: 10px;
   box-sizing:border-box;
 }
@@ -37,28 +37,29 @@
 }
 
 .main_body{
-  grid-column-start: 2;
+  grid-column-start: 1;
   grid-column-end: 5;
+  grid-row-start:2;
+  grid-row-end : 4;
   place-items: center;
   font-size: 25px;
-  width: 655px;
-  margin: auto;
-
+  place-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 .main_header {
+  background-color: rgba(21, 222, 155, 0.4);
   grid-column-start: 1;
   grid-column-end: 2;
   align-items: center;
-  color:rgb(95, 236, 236);
   font-weight: bold;
-  font-size: 25px;
 }
 
 .main_navigation{
   grid-column-start: 2;
   grid-column-end: 5;
-  color:rgb(25, 30, 24);
+  color:rgb(204, 246, 35);
   font-weight: bold;
   font-size: 32px;
   align-items: center;

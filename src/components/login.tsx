@@ -26,6 +26,7 @@ const [cookies, _, removeCookie] = useCookies(['access_token']);
 const nav = useNavigate()
 
 const verifyLogin = async (params:any) =>{
+    console.log('%c  params:', 'color: #0e93e0;background: #aaefe5;', params);
     try {
         const { data : { success, message}} = await axios.post(`${ENDPOINt}/user_login`, params, {
             withCredentials: true,
@@ -49,10 +50,11 @@ const verifyLogin = async (params:any) =>{
 }
 
 const handleText = (e: SyntheticEvent) =>{
-const { target: {value,name} } = e as any
+const { target: {value,id} } = e as any
+console.log('%c  id:', 'color: #0e93e0;background: #aaefe5;', id);
 setLoginDetails({
     ...loginDetails,
-    [name]: value
+    [id]: value
 })}
 
 useEffect(()=>{
@@ -72,19 +74,9 @@ useEffect(()=>{
 
 return (
  <div>
-  
-      <Box
-      sx={{
-        width: 300,
-        height: 300,
-        '&:hover': {
-          backgroundColor: 'primary.main',
-          opacity: [0.9, 0.8, 0.7],
-        },
-      }}
-    >   <TextField id="username" label="Username" variant="outlined" onChange={handleText} />
-    <TextField id="password" label="Password" variant="outlined" onChange={handleText}/>
-    <Button variant="contained" onClick={()=>verifyLogin(loginDetails)}>Log In</Button> </Box>
+   <TextField id="username" name="username" label="Username" variant="outlined" onChange={handleText} />
+    <TextField id="password" name="password" label="Password" variant="outlined" onChange={handleText}/>
+    <Button variant="contained" onClick={()=>verifyLogin(loginDetails)}>Log In</Button>
       <ToastContainer/>
 
  </div>

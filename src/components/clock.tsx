@@ -9,8 +9,8 @@ export const Clock = () => {
          setTimeout(( )=>{setClockDisplay(new Date())}, 1000);
     })
     return ( 
-    <div className="main_header">
-          { new Date().toLocaleDateString()} <br/>
+    <div className="grid place-items-center drop-shadow-2xl text-black hover:backdrop-contrast-150">
+          { new Date().toDateString()} <br/>
           { getClockTime(new Date(clock_display))  } 
       </div>
     )

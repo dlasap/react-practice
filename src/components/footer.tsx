@@ -4,8 +4,7 @@ export const Footer = () =>{
   <div className="text-gray-800">
     <div className="grid lg:grid-cols-2 gap-4">
       <div className="mb-6 md:mb-0">
-        <h5 className="font-medium mb-2 uppercase">Footer text</h5>
-
+      <h5 className="font-medium mb-2 uppercase">Footer text</h5>
         <p className="mb-4">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
           molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae
@@ -25,7 +24,7 @@ export const Footer = () =>{
 
   <div className="text-center text-gray-700 p-4"  >
     © 2021 Copyright:
-    <a className="text-gray-800" href="https://tailwind-elements.com/"> Sample</a>
+    <a className="text-gray-800" href="https://tailwind-elements.com/"> Nica's Place at Horizons 101</a>
   </div>
 </footer>
     )

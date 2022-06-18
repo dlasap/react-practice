@@ -11,50 +11,46 @@ import {
 import { Formcard } from './components/form-card';
 import { LoginPage } from './components/login';
 import { Logout } from './components/logout';
-import image from "./bkg-imgs/image.jpeg"; 
+import image from "./bkg-imgs/image-2.jpg"; 
 import { Footer } from './components/footer';
-const divStyle = {
-  container: {
-      backgroundImage: `url(${"https://images.pexels.com/photos/2246476/pexels-photo-2246476.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"})`,
-      backgroundPosition: 'center',
-      backgroundSize: 'cover',
-      backgroundRepeat: 'no-repeat',
-      width: '100vw',
-      height: '100vh'
-  }
-};
+import { GalleryPage } from './components/gallery';
 
 const style =  {
-// backgroundImage: `url(${image})`,
+backgroundImage: `url(${image})`,
 backgroundPosition: 'center',
 width: '100vw',
 height: '100vh',
 backgroundSize: 'cover',
 backgroundRepeat: 'no-repeat',
+margin: "auto"
 }
 
 function App() {
   
   return (
-    <div className="main_container" style={style}>
+    <div className="main_container"  style = { style}>
         <Clock/>
            <Router>
-         <div className="main_navigation">
-          <Link to="/">Home </Link> 
-          <Link to="/register">No Account? Register </Link>
-          <Link to="/login">Log In Page </Link>
-          <Link to="/profile"> Profile </Link>
+         <div className="main_navigation align-text-top space-x-16 drop-shadow-2xl  text-emerald-500">
+          <Link className='hover:text-4xl hover:text-red-400' to="/">Home </Link> 
+          
+          <Link className='hover:text-4xl hover:text-red-400 ' to="/register">No Account? Register </Link>
+          <Link className='hover:text-4xl hover:text-red-400' to="/login">Log In Page </Link>
+          <Link className='hover:text-4xl hover:text-red-400' to="/gallery"> Gallery </Link>
+          <Link className='hover:text-4xl hover:text-red-400' to="/profile"> Profile </Link>
+
         </div>
         <div className="main_body">
               <Routes>
                   <Route path="/"  element={
-                  <h1 style={ {fontSize: 40, fontFamily: 'Fira Code'}}> 
-                  Greetings Fellow Mortals!
+                  <h1 className='text-orange-500 drop-shadow-2xl backdrop-contrast-200 font-bold' style={ { fontSize: 70,fontFamily: 'Palatino Linotype'}}> 
+                  Welcome to Nica's Place!
                    </h1>}/>
                    <Route path="/test"  element={<MainApp />}  />
                    <Route path="/register" element={<RegistrationPage />} />
                    <Route path="/profile" element={<Formcard />} />
                    <Route path="/login" element={<LoginPage />} />
+                   <Route path="/gallery" element={<GalleryPage />} />
               </Routes>
         </div>
            
